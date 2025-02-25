@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>InuKawaii</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i> <i class="fas fa-sun" style="display: none;"></i>
+    </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="Desain tanpa judul.png" alt="Logo" width="80" height="80" class="me-2">
+                    <strong>InuNewsBengkulu</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://auliarahmadan13.github.io/inukawaii/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://auliarahmadan13.github.io/inukawaii/login">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="display-4">Welcome to InuNewsBengkulu Website!</h1>
+                <p class="lead">"Latest News, Trusted Facts"</p>
+            </div>
+        </section>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="demo.jpg" alt="Thumbnail">
+                <div class="card-body">
+                    <p class="card-text">Demo Di depan Gedung DPR</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="https://auliarahmadan13.github.io/inukawaii/blog1">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                        </a>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="ethanol.jpg" alt="Thumbnail">
+                <div class="card-body">
+                    <p class="card-text">9 Warga Meninggal Minum Ethanol</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="https://auliarahmadan13.github.io/inukawaii/blog1">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                        </a>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="keracunan.jpg" alt="Thumbnail">
+                <div class="card-body">
+                    <p class="card-text">Cinta Ditolak! Warga Ini Nekad Minum Baygon Di Sawah Lebar</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="https://auliarahmadan13.github.io/inukawaii/blog1">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                        </a>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p style="color:#fff">Flawless Beauty, Effortless You</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const moonIcon = themeToggle.querySelector('.fa-moon');
+        const sunIcon = themeToggle.querySelector('.fa-sun');
+
+        function updateTheme() {
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            } else {
+                localStorage.setItem('theme', 'light');
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            updateTheme();
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            updateTheme();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
