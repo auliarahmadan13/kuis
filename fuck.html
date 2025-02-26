@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>InuKawaii</title>
+    
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white-color: #fff;
+            --dark-color: #121212;
+            --primary-color: #d63384;
+            --secondary-color: #ffe6f0;
+            --background-color: #fff;
+            --text-color: #d63384;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            --background-color: #463e3e;
+            --text-color: #ffffff;
+            --primary-color: #0e070b;
+            --secondary-color: #595959;
+        }
+
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+
+        .navbar-brand strong {
+            font-weight: 600;
+            color: var(--white-color);
+        }
+
+        .jumbotron {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #b02d6f;
+            border-color: #b02d6f;
+        }
+
+        .album {
+            background-color: var(--background-color);
+        }
+
+        .card {
+            border: 1px solid var(--primary-color);
+            height: 100%;
+        }
+
+        .card-body {
+            background-color: var(--secondary-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body .d-flex {
+            margin-top: auto;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--white-color);
+        }
+
+        .theme-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--primary-color);
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 9999; /* Add this line to make sure the button stays on top */
+    }
+
+
+        .theme-toggle i {
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i> <i class="fas fa-sun" style="display: none;"></i>
+    </button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="Desain tanpa judul.png" alt="Logo" width="80" height="80" class="me-2">
+                    <strong>InuKawaii</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://auliarahmadan13.github.io/inukawaii/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Hey Beauties</h1>
+                <p class="lead text-muted">Flawless Beauty, Effortless You</p>
+                <p>
+                    <a href="https://auliarahmadan13.github.io/inukawaii/login" class="btn btn-primary my-2">Log in</a>
+                    <a href="https://auliarahmadan13.github.io/inukawaii/register" class="btn btn-secondary my-2">Sign in</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="53449fa87702af80374c45b87080c639.jpg" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Intip kebiasaan yang menyebabkan jerawat tak kunjung sembuh!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://auliarahmadan13.github.io/inukawaii/blog1">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                                </a>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="Glowing.jpg" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Rahasia glowing alami tanpa makeup yang wajib dicoba!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://auliarahmadan13.github.io/inukawaii/blog2">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                                </a>
+                                <small class="text-muted">12 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="Good-Skin-Care2.jpg" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Tips memilih skincare sesuai dengan jenis kulitmu!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://auliarahmadan13.github.io/inukawaii/blog3">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                                </a>
+                                <small class="text-muted">7 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p style="color:#fff">Flawless Beauty, Effortless You</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const moonIcon = themeToggle.querySelector('.fa-moon');
+        const sunIcon = themeToggle.querySelector('.fa-sun');
+
+        function updateTheme() {
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            } else {
+                localStorage.setItem('theme', 'light');
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            updateTheme();
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            updateTheme();
+        }
+    </script>
+    
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
