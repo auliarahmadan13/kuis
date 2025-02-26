@@ -1,0 +1,108 @@
+:root {
+    --white-color: #fff;
+    --dark-color: #121212;
+    --primary-color: #d63384;
+    --secondary-color: #ffe6f0;
+    --background-color: #fff;
+    --text-color-light: #121212;  /* Warna teks untuk light mode */
+    --text-color-dark: #ffffff;   /* Warna teks untuk dark mode */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color-light);  /* Warna teks default untuk light mode */
+}
+
+body.dark-mode {
+    --background-color: #463e3e;
+    --primary-color: #0e070b;
+    --secondary-color: #595959;
+    color: var(--text-color-dark);   /* Warna teks untuk dark mode */
+    background-color: var(--primary-color);  /* Ubah background sesuai mode */
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white !important;
+}
+.navbar-toggler {
+    border: 1px solid #ffffff; /* Border berwarna sesuai dengan primary color */
+}
+
+.navbar-toggler-icon {
+    background-color: var(--secondary-color)/* Ubah warna ikon hamburger */
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.brand-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.image-container {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color: var(--text-color-light); /* Menyesuaikan warna teks konten */
+}
+
+.content h2, .content h3 {
+    color: var(--primary-color); /* Warna judul tetap konsisten */
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.btn-outline-success {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
